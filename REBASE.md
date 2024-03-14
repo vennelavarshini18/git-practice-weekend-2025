@@ -8,14 +8,15 @@ In software development, managing commits is essential for maintaining a clean a
 
 - Create a branch called `feature-branch`.
 - Make several commits in the `feature-branch` to simulate a feature development process.
+- Switch to the master branch
+- Make some commits into the `master` branch
 
 ## Rebasing
 
 Now, let's assume that while you were working on your feature, changes were made to the `master` branch. To incorporate these changes into your feature branch, you can rebase your commits onto the latest `master` branch.
 
 1. Switch to the `feature-branch` by running `git checkout feature-branch`.
-2. Run `git fetch` to ensure you have the latest changes from the remote repository.
-3. Run `git rebase master` to rebase your commits onto the latest `master` branch.
+2. Run `git rebase master` to rebase your commits onto the latest `master` branch.
 
 <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihapdOC_T7VatzaamItAARUawhQt60tD4D5wXZOjA8PHJuxcNALSs6hTjbSZRo0CH0YBiyyfNZYVty5JZFourh2SHtvriw=w3200-h1730" alt="rebase" width="500px" height="auto">
 During the rebase process, Git will pause if there are any conflicts that need manual resolution. Resolve conflicts as prompted by Git.
