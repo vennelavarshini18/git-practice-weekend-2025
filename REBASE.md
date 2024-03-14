@@ -1,5 +1,7 @@
 # Rebasing Commits in Git
 
+ 
+
 In software development, managing commits is essential for maintaining a clean and coherent project history. Git offers various tools to manage commits, including rebasing, which allows you to reapply commits on top of another branch's history. Let's explore how to rebase commits effectively.
 
 ## Setup
@@ -15,7 +17,7 @@ Now, let's assume that while you were working on your feature, changes were made
 2. Run `git fetch` to ensure you have the latest changes from the remote repository.
 3. Run `git rebase master` to rebase your commits onto the latest `master` branch.
 
-During the rebase process, Git will pause if there are any conflicts that need manual resolution. Resolve conflicts as prompted by Git.
+&lt;img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihapdOC_T7VatzaamItAARUawhQt60tD4D5wXZOjA8PHJuxcNALSs6hTjbSZRo0CH0YBiyyfNZYVty5JZFourh2SHtvriw=w3200-h1730" alt="rebase" width="500px" height="auto"&gt; During the rebase process, Git will pause if there are any conflicts that need manual resolution. Resolve conflicts as prompted by Git.
 
 After resolving conflicts, continue the rebase process by running `git rebase --continue`.
 
